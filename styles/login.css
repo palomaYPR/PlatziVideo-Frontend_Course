@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;    
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;    
+}
+
+header {
+    align-items: center;
+    background-color: #8F57FD;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+}
+
+header img {    
+    margin-left: 3rem;
+    width: 200px;
+}
+
+.login {
+    background-color: #8f57fd;
+    background-image: linear-gradient(180deg, #8f57fd 0%, #8EC5FC 65%, #E0C3FC 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    padding: 0 3rem;   
+    min-height: calc(100vh - 200px);
+}
+
+.login__container {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    border-radius: 4rem;
+    color: white;
+    padding: 6rem 6rem 4rem;
+    min-height: 600px;
+    width: 400px;
+}
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label {
+    font-size: 1.4rem;
+}
+
+.login__container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.login__container--remember-me a {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.login__container--remember-me a:hover {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.login__container--social-media > div > img {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.login__container--register {
+    font-size: 1.4rem;    
+}
+
+.login__container--register a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: none;    
+}
+
+.login__container--register a:hover {
+    text-decoration: underline;    
+}
+.input {
+    background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid white;
+    font-family: 'Mulish', sans-serif; 
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    outline: none;
+    height: 5rem;
+}
+::placeholder {
+    color: white;    
+}
+
+.button {
+    background-color: #8f57fd;
+    opacity: .5;
+    height: 4rem;
+    border-radius: 2.5rem;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
