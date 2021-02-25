@@ -40,10 +40,17 @@ header img {
     background-color: rgba(255, 255, 255, 0.3);
     border: 2px solid white;
     border-radius: 4rem;
-    color: white;
+    color: black;
     padding: 6rem 6rem 4rem;
     min-height: 600px;
-    width: 400px;
+    width: 370px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container h2 {
+    font-size: 2rem;
 }
 
 .login__container--form {
@@ -56,20 +63,21 @@ header img {
 }
 
 .login__container--remember-me {
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+    
 }
 
 .login__container--remember-me a {
-    color: white;
+    color: black;
     font-size: 1.4rem;
     text-decoration: none;
 }
 
 .login__container--remember-me a:hover {
-    color: white;
+    color: black;
     font-size: 1.4rem;
     text-decoration: underline;
 }
@@ -91,7 +99,7 @@ header img {
 }
 
 .login__container--register a {
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 1.6rem;
     text-decoration: none;    
@@ -114,16 +122,41 @@ header img {
     height: 5rem;
 }
 ::placeholder {
-    color: white;    
+    color: gray;    
 }
 
 .button {
     background-color: #8f57fd;
     opacity: .5;
-    height: 4rem;
+    height: 5rem;
     border-radius: 2.5rem;
     color: black;
     font-weight: bold;
     cursor: pointer;
     outline: none;
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif; 
+    letter-spacing: .1rem;
+    margin: 1rem 0;
+}
+
+.footer {
+    background-color: #E0C3FC;
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;    
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    color: black;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
