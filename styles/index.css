@@ -114,25 +114,29 @@ header img {
 /* Carrusel */
 .carrusel {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     padding: 3rem;
     position: relative;
 }
 
-.carrusel #title {
-    font-size: 2.5rem;
+#title {
+    margin-left: 3.5rem;
+    font-size: 2rem;
     color: white;
     font-weight: bold;
 }
 
 .carrusel__container {
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform, 450ms -webkit-transform;
+    font-size: 0;
     white-space: nowrap;
     margin: 7rem 0;
     padding-bottom: 1rem;
 }
 
-.carrusel-item {
-    background-color: palegoldenrod;
+.carrusel-item {    
     cursor: pointer;
     display: inline-block;    
     width: 200px;       
@@ -141,6 +145,7 @@ header img {
     overflow: hidden;    
     margin-right: 1rem;    
     transition: 450ms all;
+    -webkit-transform-origin: center left;
     transform-origin: center left;
     position: relative;
 }
@@ -154,6 +159,7 @@ header img {
 }
 
 .carrusel__container:hover .carrusel-item:hover {
+    -webkit-transform: scale(1.5);
     transform: scale(1.5);
     opacity: 1;
 }
@@ -161,9 +167,11 @@ header img {
 .carrusel-item__img {
     width: 200px;
     height: 300px;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 .carrusel-item__details {
+    align-items: flex-start;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);    
     font-size: 1rem;
     opacity: 0;
@@ -180,14 +188,19 @@ header img {
 }
 
 .carrusel-item__details img {
-    height: 1.5rem;
+    height: 2rem;
 }
 
 .carrusel-item__details p {
     margin: 0;
 }
 
-.carrusel-item__details:hover {
+.carrusel-item__details:hover .carrusel-item__details{
     opacity: 1;
     color: white;
+}
+
+footer {
+    align-items: center;
+    background-color: ;
 }
