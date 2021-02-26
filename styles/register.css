@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #8F57FD;
+    --second-color: #8EC5FC;
+    --third-color: #E0C3FC;    
+    --primary-font-family: 'Mulish', sans-serif;
+    --base-color: #fff;
+    --second-base-color: #000;
+    --font-size-base: 62.5%;    
+}
+
 * {
     box-sizing: border-box;    
     margin: 0;
@@ -5,14 +15,14 @@
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Mulish', sans-serif;    
+    font-size: var(--font-size-base);
+    font-family: var(--primary-font-family);    
 }
 
 header {
     align-items: center;
-    background-color: #8F57FD;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--base-color);
     display: flex;
     height: 100px;
     justify-content: space-between;
@@ -26,8 +36,8 @@ header img {
 }
 
 .login {
-    background-color: #8f57fd;
-    background-image: linear-gradient(180deg, #8f57fd 0%, #8EC5FC 65%, #E0C3FC 98%);
+    background-color: var(--primary-color);
+    background-image: linear-gradient(180deg, var(--primary-color) 0%, var(--second-color) 65%, var(--third-color) 98%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,9 +48,9 @@ header img {
 
 .login__container {
     background-color: rgba(255, 255, 255, 0.3);
-    border: 2px solid white;
+    border: 2px solid var(--base-color);
     border-radius: 4rem;
-    color: black;
+    color: var(--second-base-color);
     padding: 6rem 6rem 4rem;
     min-height: 500px;
     width: 370px;
@@ -59,7 +69,7 @@ header img {
 }
 
 .login__container--form a {
-    color: black;
+    color: var(--second-base-color);
     font-weight: bold;
     font-size: 1.6rem;
     text-decoration: none;     
@@ -74,8 +84,8 @@ header img {
     border-left: 0;
     border-right: 0;
     border-top: 0;
-    border-bottom: 2px solid white;
-    font-family: 'Mulish', sans-serif; 
+    border-bottom: 2px solid var(--base-color);
+    font-family: var(--primary-font-family); 
     font-size: 1.6rem;
     margin-bottom: 2rem;
     padding: 0 2rem;
@@ -87,16 +97,16 @@ header img {
 }
 
 .button {
-    background-color: #8f57fd;
+    background-color: var(--primary-color);
     opacity: .5;
     height: 5rem;
     border-radius: 2.5rem;
-    color: black;
+    color: var(--second-base-color);
     font-weight: bold;
     cursor: pointer;
     outline: none;
     font-size: 1.6rem;
-    font-family: 'Mulish', sans-serif; 
+    font-family: var(--primary-font-family); 
     letter-spacing: .1rem;
     margin: 1rem 0;    
 }
@@ -107,7 +117,7 @@ header img {
 }
 
 .footer {
-    background-color: #E0C3FC;
+    background-color: var(--third-color);
     display: flex;
     align-items: center;
     padding-top: 2rem;    
@@ -116,7 +126,7 @@ header img {
 }
 
 .footer a {
-    color: black;
+    color: var(--second-base-color);
     cursor: pointer;
     font-size: 1.4rem;
     padding-left: 3rem;
