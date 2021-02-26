@@ -119,6 +119,7 @@ header img {
     position: relative;
 }
 
+
 #title {
     margin-left: 3.5rem;
     font-size: 2rem;
@@ -200,7 +201,23 @@ header img {
     color: white;
 }
 
-footer {
+.footer {
     align-items: center;
-    background-color: ;
+    display: flex;
+    align-items: center;
+    padding-top: 2rems;
+    height: 100px;
+    width: 100½;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    text-decoration: none;    
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
